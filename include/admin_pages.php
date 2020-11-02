@@ -48,6 +48,9 @@ function wpvip_plans_page(){
                         $plan_edit = $wpdb->get_row( $wpdb->prepare( "SELECT * 
                                                                         FROM {$table_prefix}vip_plans 
                                                                         WHERE plan_ID=%d", $item_id ) );}
+                 $price_edit = $wpdb->get_row( $wpdb->prepare( "SELECT * 
+                 FROM {$table_prefix}vip_plans 
+                 WHERE 	price=%d", $price ) );
 
            include WPVIP_TPL.'admin/plans/edit.php';           
               break;

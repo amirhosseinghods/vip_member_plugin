@@ -13,13 +13,13 @@
     <tr valign="top">
         <th scope="row">قیمت</th>
         <td>
-        <input type="text" name="price">
+        <input type="text" name="price" value="<?php echo isset($plan_edit) ? $plan_edit->price :"" ?>">
          </td>
     </tr>
     <tr valign="top">
         <th scope="row">اعتبار روزانه</th>
         <td>
-        <input type="text" name="credit">
+        <input type="text" name="credit" value="<?php echo isset($plan_edit) ? $plan_edit->credit :"" ?>">
          </td>
     </tr>
 </table>
